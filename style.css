@@ -27,7 +27,12 @@ body {
   display: flex;
   flex-direction: column;
   padding: 5rem 4rem;
-  background: linear-gradient(to right, rgba(235, 251, 255, 0.7), rgba(235, 251, 255, 0.7)), url(/images/bg-hero-desktop.svg);
+  background: linear-gradient(
+      to right,
+      rgba(235, 251, 255, 0.7),
+      rgba(235, 251, 255, 0.7)
+    ),
+    url(/images/bg-hero-desktop.svg);
   background-size: cover;
   min-height: 120vh;
 }
@@ -53,11 +58,11 @@ body {
 
 .header__btn {
   background-color: #fff;
-  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, .3);
+  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.3);
   border-radius: 5rem;
   padding: 1.5rem 6rem;
 
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 700;
   color: var(--dark-cyan);
   border: 0;
@@ -146,21 +151,25 @@ body {
 
 .footer {
   display: grid;
-  grid-template-columns: repeat(4, min-content);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
 
   background-color: var(--dark-cyan);
   padding: 5rem;
 }
 
-.footer__img:nth-child(2) {
-  grid-row: 2/2
+.footer__img {
+  display: flex;
+  align-items: flex-start;
 }
 
-
+.footer__img:nth-child(2) {
+  grid-row: 2/2;
+}
 
 /* TYPOGRAPHY */
 .heading-1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 4rem;
 }
 
@@ -170,7 +179,7 @@ body {
 
 .heading-2 {
   font-size: 3rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--dark-cyan);
   margin-bottom: 2rem;
 }
@@ -182,10 +191,10 @@ body {
 /* COMPONENTS */
 .btn {
   background-color: var(--color-pink);
-  box-shadow: 0 .3rem .75rem rgba(0, 0, 0, .3);
+  box-shadow: 0 0.3rem 0.75rem rgba(0, 0, 0, 0.3);
   color: #fff;
 
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   border: 0;
 }
@@ -196,7 +205,6 @@ body {
   border-radius: 3rem;
   padding: 2rem 6rem;
 }
-
 
 .btn--2 {
   font-size: 2rem;
