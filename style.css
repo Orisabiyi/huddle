@@ -144,6 +144,18 @@ body {
   object-fit: cover;
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+
+  background-color: var(--dark-cyan);
+  padding: 5rem;
+}
+
+.footer__img:nth-child(2) {
+  grid-row: 2/2
+}
+
 
 
 /* TYPOGRAPHY */
