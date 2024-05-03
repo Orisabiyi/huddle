@@ -210,6 +210,11 @@ body {
   gap: 2rem;
 }
 
+.footer__item:hover {
+  text-decoration: underline;
+  transition: all 1.5s;
+}
+
 .footer__social {
   display: flex;
   justify-content: center;
