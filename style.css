@@ -11,6 +11,7 @@
   --dark-cyan: hsl(192, 100%, 9%);
   --grayish-blue: hsl(208, 11%, 55%);
   --color-pink: hsl(322, 100%, 66%);
+  --color-pink-light: hsl(322, 90%, 73%);
 }
 
 html {
@@ -66,6 +67,11 @@ body {
   font-weight: 700;
   color: var(--dark-cyan);
   border: 0;
+}
+
+.header__btn:hover {
+  color: rgb(184, 182, 182);
+  transition: all 1s;
 }
 
 .header__body {
@@ -266,6 +272,11 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   border: 0;
+}
+
+.btn:hover {
+  background-color: var(--color-pink-light);
+  transition: all 1.5s;
 }
 
 .btn--1 {
