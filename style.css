@@ -216,6 +216,7 @@ body {
   }
 
   .service__card:last-of-type {
+    text-align: center;
     width: 95%;
     bottom: -4%;
     padding: 6rem 3rem;
@@ -309,6 +310,7 @@ body {
 
 @media only screen and (max-width: 31.25em) {
   .footer {
+    padding: 25rem 10rem 5rem 10rem;
     align-items: center;
     gap: 2rem;
   }
